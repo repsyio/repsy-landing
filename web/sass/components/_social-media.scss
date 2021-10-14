@@ -1,0 +1,27 @@
+.social-media {
+  display: flex;
+  align-items: flex-end;
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      display: inline-block;
+      margin-right: .7rem;
+    }
+
+    &:hover .social-media__icon,
+    &:active .social-media__icon {
+      transform: scale(1.1);
+      filter: drop-shadow(0 5px 1rem rgba($color-white, .5));
+    }
+  }
+
+  &__icon {
+    width: 2.2rem;
+    height: 2.2rem;
+    fill: rgba($color-white, .7);
+
+    transition: all .2s ease-out;
+  }
+}

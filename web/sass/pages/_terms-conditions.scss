@@ -1,0 +1,37 @@
+.terms-conditions {
+  height: 40rem;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__box {
+    width: 80%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__heading {
+    font-size: 1.8rem;
+
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 1.5;
+
+  }
+
+  &__buttons {
+    width: 28%;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+}

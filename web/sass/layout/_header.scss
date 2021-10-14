@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 1rem 2rem;
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+
+  &__logo {
+    width: 12rem;
+    height: 4rem;
+  }
+
+  &--on-scroll {
+    box-shadow: 0 3px 12px rgba($color-black, .2);
+    background-color: #E8E8E4;
+    //ECE4DB
+    //F8EDEB
+  }
+
+  &--bg {
+    background-color: #534A66;
+  }
+
+  &--position {
+
+    margin-bottom: 0;
+  }
+}
+

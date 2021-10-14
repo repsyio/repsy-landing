@@ -1,0 +1,35 @@
+.wave-container {
+  position: relative;
+  top: -5px;
+  overflow: hidden;
+  color: $color-white;
+
+  &__box {
+    width: 30%;
+    position: absolute;
+    left: 5%;
+    top: 25%;
+
+  }
+
+  &__heading {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+  }
+
+  &__text {
+    float: left;
+    width: 80%;
+    text-align: justify;
+    font-size: 1.2rem;
+  }
+
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+    float: left;
+    margin-right: 1rem;
+  }
+
+}

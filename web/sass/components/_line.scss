@@ -1,0 +1,12 @@
+.line {
+  &-top {
+    visibility: hidden;
+    position: relative;
+  }
+
+  &-bottom {
+    visibility: hidden;
+    position: relative;
+    top: 20rem;
+  }
+}

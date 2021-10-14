@@ -1,0 +1,67 @@
+.nav {
+  display: flex;
+  align-items: center;
+
+  &__list {
+    list-style: none;
+
+    display: flex;
+  }
+
+  &__item {
+    margin: .5rem 1rem;
+  }
+
+  &__link {
+    position: relative;
+
+    &:link,
+    &:visited {
+      font-size: 1.6rem;
+      color: $color-font;
+      text-decoration: none;
+    }
+
+    &:hover,
+    &:active {
+
+      &:before {
+        width: 100%;
+      }
+    }
+
+    &:before {
+      content: "";
+      width: 0;
+      height: 3px;
+      background-color: $color-primary;
+
+      position: absolute;
+      left: 0;
+      bottom: -15%;
+
+      transition: all .2s ease-in;
+    }
+  }
+
+  &__link--white {
+    position: relative;
+
+    &:link,
+    &:visited {
+      color: $color-white;
+    }
+
+    &:hover,
+    &:active {
+      &:before {
+        width: 100%;
+        color: $color-primary;
+      }
+    }
+
+    &:before {
+      background-color: $color-white;
+    }
+  }
+}

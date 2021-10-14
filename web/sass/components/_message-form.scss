@@ -1,0 +1,70 @@
+.message-form {
+  flex: 0 30%;
+  height: 90%;
+  padding: 1rem;
+  font-size: 1.3rem;
+
+  display: flex;
+  flex-direction: column;
+
+
+  &__input {
+    width: 90%;
+    display: block;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
+    padding: .5rem;
+    border: 2px solid $color-primary;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+
+    transition: all .2s;
+
+    &::-webkit-input-placeholder {
+      color: rgba($color-font, .3);
+    }
+
+    &:focus {
+      background-color: rgba(#d7d1e4, .3);
+      outline: none;
+      border-color: $color-font;
+
+      &::-webkit-input-placeholder {
+        color: transparent;
+      }
+    }
+  }
+
+  &__textarea {
+    resize: none;
+  }
+
+  &__button {
+    display: block;
+    background-color: $color-primary;
+    color: $color-white;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    padding: .5rem 0;
+    width: 40%;
+    border: none;
+    text-transform: uppercase;
+    box-shadow: 0 2px 2px 1px rgba($color-black, .2);
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover,
+    &:active {
+      outline: none;
+      box-shadow: 0 2px 1rem 4px rgba($color-black, .2);
+      transform: scale(1.1);
+    }
+  }
+
+
+  &__signin-btn {
+    color: $color-primary;
+  }
+
+}

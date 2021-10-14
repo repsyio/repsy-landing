@@ -1,0 +1,54 @@
+.about-card {
+  flex: 0 30%;
+  height: 80%;
+  border-radius: 15px;
+
+  box-shadow: 0 3px 10px 2px rgba($color-black, 0.3);
+
+  display: flex;
+  flex-direction: column;
+
+  &__top {
+    height: 50%;
+    background-color: $color-primary;
+    border-radius: 10px 10px 0 0;
+  }
+
+  &__bottom {
+    height: 50%;
+    border-radius: 0 0 10px 10px;
+
+    padding: 2rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__heading {
+    margin-bottom: 1.2rem;
+  }
+
+  &__description {
+    margin-bottom: 3rem;
+    font-size: .8;
+    line-height: 1.5;
+  }
+
+  &__button {
+    align-self: flex-start;
+
+    &:link,
+    &:visited {
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: $color-font;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-primary;
+      text-decoration: underline;
+    }
+  }
+}
