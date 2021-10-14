@@ -24,11 +24,12 @@ jobs:
               run: echo "tag=staging-$(date '+%y%m%d%H%M')" >> $GITHUB_ENV
 
             - name: Build the image
+              env:
+                  DOCKER_HUB_LOGIN: ${{ secrets.DOCKER_HUB_LOGIN }}
+                  DOCKER_HUB_TOKEN: ${{ secrets.DOCKER_HUB_TOKEN }}
               run: bash ./package.sh ${{ env.tag }}
 
             - name: Deploy to the kubernetes
               env:
-                  DOCKER_HUB_LOGIN: ${{ secrets.DOCKER_HUB_LOGIN }}
-                  DOCKER_HUB_TOKEN: ${{ secrets.DOCKER_HUB_TOKEN }}
                   K8S_CONFIG: ${{ secrets.K8S_CONFIG }}
               run: bash ./deploy.sh ${{ env.tag }}
