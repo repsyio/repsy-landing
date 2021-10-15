@@ -12,10 +12,10 @@ jobs:
 
         steps:
             - name: Checkout to the main branch
-            - uses: actions/checkout@v2
+              uses: actions/checkout@v2
 
             - name: Setup kubectl
-            - uses: azure/setup-kubectl@v1
+              uses: azure/setup-kubectl@v1
 
             - name: Compile
               run: bash ./compile.sh
