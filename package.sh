@@ -7,5 +7,6 @@ docker push repsy/repsy-landing:"$1"
 
 if [[ $GITHUB_REF = "refs/heads/main" ]];
 then
+  docker build . --file Dockerfile --tag repsy/repsy-landing:latest
   docker push repsy/repsy-landing:latest
 fi
