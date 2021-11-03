@@ -19,30 +19,30 @@
 }
 
 html {
-  font-size : 16px;
+  font-size : 17px;
 }
 
 @media screen and (max-width : 1400px) {
   html {
-    font-size : 14px;
+    font-size : 15px;
   }
 }
 
 @media screen and (max-width : 1200px) {
   html {
-    font-size : 12px;
+    font-size : 13px;
   }
 }
 
 @media screen and (max-width : 991px) {
   html {
-    font-size : 10px;
+    font-size : 13px;
   }
 }
 
 @media screen and (max-width : 767px) {
   html {
-    font-size : 9px;
+    font-size : 13px;
   }
 }
 
@@ -615,10 +615,14 @@ body {
 }
 
 .sectionMatrix-icon {
-  width  : 7rem;
+  width  : 16rem;
   height : 7rem;
+  transition: 0.4s ease all;
 }
-
+.sectionMatrix-icon:hover{
+  width: 18rem;
+  height: 8rem;
+}
 .sectionMatrix-bg-1 {
   position : absolute;
   left     : 0;
@@ -761,6 +765,10 @@ body {
 .sectionMatrix-text {
   font-size      : 1.2rem !important;
   text-transform : uppercase;
+}
+.sectionMatrix-p{
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 .sectionTestimonial {
@@ -921,7 +929,7 @@ body {
 }
 
 .footer > .container {
-  min-height : 40.1rem;
+  min-height : 93vh;
   padding    : 6rem 0 2rem 0;
 }
 
