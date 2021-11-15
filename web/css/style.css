@@ -615,13 +615,13 @@ body {
 }
 
 .sectionMatrix-icon {
-  width  : 16rem;
-  height : 7rem;
+  width  : 14rem;
+  height : 6rem;
   transition: 0.4s ease all;
 }
 .sectionMatrix-icon:hover{
-  width: 18rem;
-  height: 8rem;
+  width: 16rem;
+  height: 7rem;
 }
 .sectionMatrix-bg-1 {
   position : absolute;
@@ -854,16 +854,26 @@ body {
   top       : 5%;
   transform : rotate(180deg);
 }
-
+.sectionMatrix-bg-width{
+  width: 700px;
+}
 @media screen and (min-width : 2000px) {
   .sectionMatrix > .container {
     position : relative;
   }
 }
-
+@media screen and (max-width : 1400px) {
+  
+  .sectionMatrix-bg-width{
+    width: 44vw;
+  }
+}
 @media screen and (max-width : 991px) {
   .sectionMatrix-heading {
     font-size : 2.2rem;
+  }
+  .sectionMatrix-bg-width{
+    width: 44vw;
   }
 }
 
@@ -884,6 +894,9 @@ body {
 
   .sectionMatrix-bg-2 {
     top : 55%;
+  }
+  .sectionMatrix-bg-width{
+    width: 52vw;
   }
 }
 
